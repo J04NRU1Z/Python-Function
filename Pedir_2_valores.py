@@ -1,4 +1,4 @@
-def PedirValores():
+def PedirValores() -> (int, int):
     """
     Pide valores enteros al usuario y los devuelve al programa principal.
     
