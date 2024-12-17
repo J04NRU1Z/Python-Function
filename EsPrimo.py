@@ -9,9 +9,12 @@ def EsPrimo(numero: int)-> bool:
     """
     div = 2
     primo = True
-    while div < numero:
-        if numero % div == 0 or numero < 2:
+    if numero == 1 or numero == 0:
+        primo = False
+    while div < numero // 2:
+        if numero % div == 0:
             primo = False
         div += 1
     return primo
+
         
